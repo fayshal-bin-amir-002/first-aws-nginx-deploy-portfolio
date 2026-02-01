@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Engineer | MERN & Laravel Expert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap');
+        body { font-family: 'Space Grotesk', sans-serif; scroll-behavior: smooth; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+        .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glow-blue { box-shadow: 0 0 20px rgba(59, 130, 246, 0.2); }
+        .gradient-text { background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-[#020617] text-slate-300 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass border-b border-white/5 py-4 px-8 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter text-white">FS<span class="text-blue-500">_DEV</span></div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
+            <a href="#hero" class="hover:text-blue-400 transition">Experience</a>
+            <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+            <a href="#stack" class="hover:text-blue-400 transition">Skills</a>
+            <a href="#docs" class="bg-blue-600/20 text-blue-400 px-4 py-1 rounded-full border border-blue-500/30">DevOps Logs</a>
+        </div>
+    </nav>
+
+    <header id="hero" class="relative min-h-screen flex items-center justify-center pt-20">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <span class="px-4 py-2 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-widest">Available for 2026 Projects</span>
+            <h1 class="text-6xl md:text-8xl font-bold text-white mt-8 mb-6 leading-tight">
+                Architecting <br> <span class="gradient-text">Scalable Solutions.</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-slate-400 mb-10">
+                Full-Stack Engineer specializing in <strong>MERN</strong> and <strong>Laravel</strong>. 
+                Optimized for <strong>Akamai/Linode</strong> environments with <strong>Apache</strong> reverse proxies 
+                and <strong>Cloudflare</strong> security.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-blue-900/20">Explore Projects</a>
+                <a href="#docs" class="glass px-8 py-4 rounded-xl font-bold text-white hover:bg-white/5 transition-all">Deployment Docs</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="projects" class="py-24 bg-slate-900/30">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-white mb-16 flex items-center gap-4">
+                <span class="h-1 w-12 bg-blue-500"></span> Featured Work
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass p-1 rounded-2xl group transition-all hover:scale-[1.02]">
+                    <div class="bg-slate-950 rounded-2xl p-6 h-full">
+                        <div class="flex justify-between mb-4">
+                            <i class="fab fa-react text-cyan-400 text-3xl"></i>
+                            <span class="text-xs font-mono text-slate-500">MERN STACK</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Enterprise CRM Dashboard</h3>
+                        <p class="text-slate-400 text-sm mb-6">Real-time data visualization using Node.js, Express, and MongoDB with a high-performance React frontend.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-2 py-1 bg-slate-800 rounded text-[10px] font-bold">MONGODB</span>
+                            <span class="px-2 py-1 bg-slate-800 rounded text-[10px] font-bold">SOCKET.IO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass p-1 rounded-2xl group transition-all hover:scale-[1.02]">
+                    <div class="bg-slate-950 rounded-2xl p-6 h-full">
+                        <div class="flex justify-between mb-4">
+                            <i class="fab fa-laravel text-red-500 text-3xl"></i>
+                            <span class="text-xs font-mono text-slate-500">LARAVEL + MYSQL</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">SaaS Billing Platform</h3>
+                        <p class="text-slate-400 text-sm mb-6">Robust backend architecture utilizing MySQL, handling complex subscription logic and secure transactions.</p>
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 bg-slate-800 rounded text-[10px] font-bold">MYSQL</span>
+                            <span class="px-2 py-1 bg-slate-800 rounded text-[10px] font-bold">REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass p-1 rounded-2xl group transition-all hover:scale-[1.02]">
+                    <div class="bg-slate-950 rounded-2xl p-6 h-full border border-blue-500/20">
+                        <div class="flex justify-between mb-4">
+                            <i class="fas fa-server text-blue-400 text-3xl"></i>
+                            <span class="text-xs font-mono text-slate-500">LINODE / DEVOPS</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Automated Next.js CI/CD</h3>
+                        <p class="text-slate-400 text-sm mb-6">Optimized deployment pipeline for Next.js on Akamai servers behind Apache reverse proxy.</p>
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 bg-slate-800 rounded text-[10px] font-bold">NEXT.JS</span>
+                            <span class="px-2 py-1 bg-slate-800 rounded text-[10px] font-bold">CLOUDFLARE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="py-24">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-white mb-6">Technical Arsenal</h2>
+                <p class="text-slate-400 mb-8 leading-relaxed">
+                    Over 5 years of experience building applications that don't just work, but scale. 
+                    From frontend reactivity to database normalization and server-side hardening.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="glass p-4 rounded-xl flex items-center gap-3">
+                        <i class="fas fa-check-circle text-green-400"></i>
+                        <span class="font-bold">MERN Mastery</span>
+                    </div>
+                    <div class="glass p-4 rounded-xl flex items-center gap-3">
+                        <i class="fas fa-check-circle text-green-400"></i>
+                        <span class="font-bold">Laravel / PHP</span>
+                    </div>
+                    <div class="glass p-4 rounded-xl flex items-center gap-3">
+                        <i class="fas fa-check-circle text-green-400"></i>
+                        <span class="font-bold">MySQL & NoSQL</span>
+                    </div>
+                    <div class="glass p-4 rounded-xl flex items-center gap-3">
+                        <i class="fas fa-check-circle text-green-400"></i>
+                        <span class="font-bold">Linux SysAdmin</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
+                <div class="glass p-8 rounded-3xl relative z-10">
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2"><span class="font-bold text-white">Frontend (Next.js/React)</span><span>95%</span></div>
+                            <div class="h-2 bg-slate-800 rounded-full"><div class="h-full bg-blue-500 rounded-full" style="width: 95%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span class="font-bold text-white">Backend (Node/Laravel)</span><span>90%</span></div>
+                            <div class="h-2 bg-slate-800 rounded-full"><div class="h-full bg-purple-500 rounded-full" style="width: 90%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2"><span class="font-bold text-white">DevOps (Linode/Apache)</span><span>85%</span></div>
+                            <div class="h-2 bg-slate-800 rounded-full"><div class="h-full bg-pink-500 rounded-full" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="docs" class="py-24 bg-slate-900/20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Deployment Documentation</h2>
+                <p class="text-slate-400">Standard operating procedures for Akamai/Linode deployments.</p>
+            </div>
+            
+            <div class="flex space-x-2 bg-slate-950 p-2 rounded-2xl mb-8 border border-white/5">
+                <button onclick="openTab(event, 'ssh')" class="tab-btn flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all bg-blue-600 text-white shadow-lg">SSH Key Add</button>
+                <button onclick="openTab(event, 'connect')" class="tab-btn flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all text-slate-400 hover:text-white">Connect to Instance</button>
+                <button onclick="openTab(event, 'dns')" class="tab-btn flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all text-slate-400 hover:text-white">DNS Management</button>
+            </div>
+
+            <div id="ssh" class="tab-content active glass p-8 rounded-3xl border-l-4 border-l-blue-500">
+                <h3 class="text-2xl font-bold text-white mb-4">Secure SSH Handshake</h3>
+                <p class="mb-6">Adding authorized keys to your Linode droplet for passwordless authentication.</p>
+                <div class="bg-black/80 rounded-xl p-5 font-mono text-sm text-green-400 border border-white/10">
+                    <p class="mb-2 text-slate-500"># On your local machine</p>
+                    <p>ssh-keygen -t ed25519 -C "admin@domain.com"</p>
+                    <p>ssh-copy-id root@192.168.1.100</p>
+                </div>
+            </div>
+
+            <div id="connect" class="tab-content glass p-8 rounded-3xl border-l-4 border-l-purple-500">
+                <h3 class="text-2xl font-bold text-white mb-4">Server Access Console</h3>
+                <p class="mb-6">Direct access protocol for managing Apache and Next.js processes.</p>
+                <div class="bg-black/80 rounded-xl p-5 font-mono text-sm text-purple-400 border border-white/10">
+                    <p>ssh root@your_linode_ip</p>
+                    <p class="text-slate-500"># Status check commands</p>
+                    <p>systemctl status apache2</p>
+                    <p>pm2 status</p>
+                </div>
+            </div>
+
+            <div id="dns" class="tab-content glass p-8 rounded-3xl border-l-4 border-l-pink-500">
+                <h3 class="text-2xl font-bold text-white mb-4">Cloudflare Edge Config</h3>
+                <p class="mb-6">Optimizing propagation and security via Cloudflare DNS.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+                        <span class="text-xs uppercase text-slate-500">A Record</span>
+                        <p class="text-white font-bold">@ &rarr; Linode IP</p>
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-xl border border-white/10">
+                        <span class="text-xs uppercase text-slate-500">CNAME</span>
+                        <p class="text-white font-bold">www &rarr; domain.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center gap-8 mb-8">
+                <a href="#" class="text-slate-400 hover:text-white transition text-2xl"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-slate-400 hover:text-white transition text-2xl"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-slate-400 hover:text-white transition text-2xl"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="text-slate-500 text-sm tracking-widest uppercase">&copy; 2026 Developed by You. Hosted on Akamai.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            const contents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < contents.length; i++) {
+                contents[i].classList.remove("active");
+            }
+
+            const buttons = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("bg-blue-600", "text-white", "shadow-lg");
+                buttons[i].classList.add("text-slate-400");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("bg-blue-600", "text-white", "shadow-lg");
+            evt.currentTarget.classList.remove("text-slate-400");
+        }
+    </script>
+</body>
+</html>
